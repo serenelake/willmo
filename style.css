@@ -34,6 +34,19 @@
     font-weight: 380;
 }
 
+i{
+    color:gray;
+}
+
+#top i{
+    font-size: 14px;
+}
+
+#top div{
+    text-align: center;
+    padding: 20px;
+}
+
 #profile{
    display: grid;
    grid-template-columns: 1fr 3.5fr;
@@ -107,4 +120,16 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 15px;
+}
+
+.selected{
+    border-bottom: solid purple 8px;
 }

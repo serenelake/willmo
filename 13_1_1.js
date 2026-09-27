@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded",
     function(e) {
-        let button = document.querySelector("input")
-        let p = document.querySelector("p")
+        let nameEditButton = document.querySelector("#nameEditButton")
+        let editName = document.querySelector("#editNameField")
+        let okButton = document.querySelector("#okButton")
+        let newName = document.querySelector("#newName")
+        let nameHere = document.querySelector("#nameHere")
 
-        button.addEventListener("click",
+        nameEditButton.addEventListener("click",
             function(e) {
-                console.log(p.textContent)
+                editName.style.display = "block"
+                nameEditButton.style.display = "none"
             }
         )
-    }
-)
+
+        okButton.addEventListener("click",
+            function(e) {
+                nameHere.textContent = " : " + newName.value
+                editName.style.display = "none"
+                nameEditButton.style.display = "inline"
+            }

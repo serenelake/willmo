@@ -75,6 +75,26 @@ document.addEventListener("DOMContentLoaded",
                     changing = true
                 }
             }
+        )
+        
+        let profile = document.querySelector("#profile .circle_pic")
+
+        profile.addEventListener("mouseover",
+            function(e) {
+                e.target.style.filter = "grayscale(50%)"
+            }
+        )
+
+        profile.addEventListener("mouseout",
+            function(e) {
+                e.target.style.filter = "grayscale(0%)"
+            }
+        )
+
+        profile.addEventListener("click",
+            function(e) {
+                profile.setAttribute("src", prompt("바꿀 이미지 url을 입력하세요"))
+            }
         )        
     }
 )

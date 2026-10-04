@@ -1,3 +1,5 @@
+alert("script2 실행됨")
+
 document.addEventListener("DOMContentLoaded",
     function(e) {
         let configID = document.querySelector("#id i")
